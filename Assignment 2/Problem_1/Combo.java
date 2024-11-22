@@ -16,13 +16,13 @@ public class Combo extends FoodItem{
     @Override
     public void removeItem(Item item) {
         for(Item it : items) {
-            if(item.getName().equalsIgnoreCase(item.getName())) {
+            if(item.getName().equalsIgnoreCase(it.getName())) {
                 items.remove(it);
                 return;
             }
         }
         for(Item it : freeItems) {
-            if(item.getName().equalsIgnoreCase(item.getName())) {
+            if(item.getName().equalsIgnoreCase(it.getName())) {
                 freeItems.remove(it);
                 return;
             }
